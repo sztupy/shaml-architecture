@@ -23,5 +23,10 @@ gem sources -a http://gems.github.com
 gem install sztupy-shaml
 }}}
 
-
 This will install shaml, compass and haml-edge on your computer.
+
+= Install without ruby =
+
+Alternatively you can get the bare application without any fancy generation framework. Download the latest VS2008 solution from [http://github.com/sztupy/shaml/downloads github]
+
+Don't forget that if you don't have compass installed, then the stylesheet generation build process will always fail. Remove the command "compass --update" from the post build process if you don't use it.
