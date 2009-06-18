@@ -1,0 +1,27 @@
+#summary How to install s#aml-architecture
+
+= Introduction =
+
+Things you will need:
+ * mono 2.4 or .NET 3.5
+ * ruby 1.8.x (might work with 1.9.1)
+ * rubygems
+
+= Installation =
+
+To install shaml you will need to use githubs gem server, as shaml is distributed there.
+
+Linux:
+{{{
+sudo gem sources -a http://gems.github.com
+sudo gem install sztupy-shaml
+}}}
+
+Windows:
+{{{
+gem sources -a http://gems.github.com
+gem install sztupy-shaml
+}}}
+
+
+This will install shaml, compass and haml-edge on your computer.
