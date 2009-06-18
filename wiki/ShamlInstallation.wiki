@@ -39,7 +39,7 @@ Open the solution, and press build.
 
 == Mono ==
 
-Add System.Web.Mvc.dll and System.Web.Mobile.dll to the libraries directory, and remove NHibernate.Linq.dll from that. Next run
+Add System.Web.Mvc.dll and System.Web.Mobile.dll (not included) to the libraries directory, and remove NHibernate.Linq.dll (included but does not work) from that. Next run
 {{{
 gmcs -recurse:*.cs `ls ../libraries/*.dll | sed "s/../-r:../"` -r:System.Web.Routing -r:System.Web -t:library -out:bin/WebBase.dll
 }}}
