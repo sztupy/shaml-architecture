@@ -39,4 +39,21 @@ Open the solution, and press build.
 
 == Mono ==
 
-Use gmcs to compile all .cs files in the App directory to an assembly. Add all files from the libraries directory as reference, and include a copy of System.Web.Mobile and System.Web.Mvc too.
+Add System.Web.Mvc.dll and System.Web.Mobile.dll to the libraries directory, and remove NHibernate.Linq.dll from that. Next run
+{{{
+gmcs -recurse:App/*.cs `ls ../libraries/*.dll | sed "s/../-r:../"` -r:System.Web.Routing -r:System.Web -t:library -out:bin/WebBase.dll
+}}}
+from the main Web directory. Then copy all files from the libraries dir to the bin dir, and you're ready
+
+= Running =
+
+== Windows ==
+
+Press run in Visual Studio
+
+== Mono ==
+
+add the dll's of the libraries directory to MONO_PATH. then run xsp2. Or run:
+{{{
+MONO_PATH="/path/to/app/bin" xsp2 --port 8080
+}}}
