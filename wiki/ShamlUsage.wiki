@@ -18,4 +18,4 @@ This will create a new model called Resname, with two properties. It will also c
 
 Apart from the installation, s#aml-architecture uses the same things as s#arp-architecture, Fluent NHibernate, dotNetOpenAuth and of course ASP.NET MVC, so check their documentations too for more.
 
-Check TreeListing page for more information about the structure of the generated application
+Check TreeListing and GoodToKnow pages for more information about the structure of the generated application
