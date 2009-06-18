@@ -21,6 +21,10 @@ Shaml uses the NauckIt.PostgreSQL provider to store these kinds of information. 
 
 DotNetOpenAuth is unfortunately not very stable on mono, but some recent changes made the !RelyingParty working. Check the "libraries" part of this page for more information. Shaml uses a modified MembershipProvider to store OpenID data, that allows users to have multiple identities.
 
+= Compass =
+
+Compass is an Sass based CSS framework. Shaml uses compass as a post-processor of stylesheet files (the default project file will run compass --update after each run, so you don't have to). Read more about compass at http://compass-style.org
+
 = Changes from S#arp-architecture =
 
 Shaml.Core and Shaml.Testing are more-or-less the same as s#arp-architecture, but without the dependency on Windsor (don't work under mono) and !ServiceLocator (don't work under mono). Shaml also uses some newer assemblies, like ASP.NET MVC 1.0, and Fluent NHibernate.
