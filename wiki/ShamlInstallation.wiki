@@ -53,7 +53,7 @@ Press run in Visual Studio
 
 == Mono ==
 
-add the dll's of the libraries directory to MONO_PATH. then run xsp2. Or run:
+add the dll's of the libraries directory to MONO_PATH. then run xsp2. Or simply:
 {{{
 MONO_PATH="/path/to/app/bin" xsp2 --port 8080
 }}}
