@@ -1,0 +1,18 @@
+#summary The structure of your application
+
+= Tree =
+
+ * !WebBase: Base directory of the MVC application
+  * App
+   * !AppServices: Base classes that were generated from shaml. Put your Application Services related files too. Includes the !OpenIDController, the !MembershipAdministrator Controller and the Routing table.
+   * Controllers: Stores your controllers
+    * Support: Stores the controllers that support the framework: !OpenID, !Administration, !Home, !Login
+   * Models: Domain classes
+    * Mapping: Fluent NHibernate auto mapping override files
+   * Stylesheets: Compass SASS stylesheets.
+   * Views: Views in NHaml format
+  * db: Generated schemas from the fluent nhibernate mappings. Contains the membership schema too
+  * log: Log files
+  * Content: Stylesheets and images
+  * Scripts: Javascript files
+ * !WebBase.Tests: NUnit tests
