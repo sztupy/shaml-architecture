@@ -1,0 +1,19 @@
+#summary How to create a S#aml-architecture application
+
+= Introduction =
+
+To create a shaml application use the shaml command line utility to generate an application:
+{{{
+shaml generate app NewApp
+}}}
+
+this will create a NewApp directory with the complete s#aml-architecture stack. Open the solution in VS.NET2008, compile, deploy on your mono box and you're ready to go.
+
+The shaml command can also create REST-styled resources. Run the following inside your solution directory:
+{{{
+shaml generate resource resname name:string;date:DateTime
+}}}
+
+This will create a new model called Resname, with two properties. It will also create a scaffold view, unit tests, and a controller to handle editing the resource.
+
+Apart from the installation, s#aml-architecture uses the same things as s#arp-architecture, Fluent NHibernate, dotNetOpenAuth and of course ASP.NET MVC, so check their documentations too for more.
