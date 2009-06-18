@@ -25,6 +25,10 @@ DotNetOpenAuth is unfortunately not very stable on mono, but some recent changes
 
 Compass is an Sass based CSS framework. Shaml uses compass as a post-processor of stylesheet files (the default project file will run compass --update after each run, so you don't have to). Read more about compass at http://compass-style.org
 
+= NHaml =
+
+Shaml uses the latest NHaml as the default ViewEngine. You can of course switch back to aspx pages if you want, just don't forget to add the default view engine in the global.aspx.cs file.
+
 = Changes from S#arp-architecture =
 
 Shaml.Core and Shaml.Testing are more-or-less the same as s#arp-architecture, but without the dependency on Windsor (don't work under mono) and !ServiceLocator (don't work under mono). Shaml also uses some newer assemblies, like ASP.NET MVC 1.0, and Fluent NHibernate.
