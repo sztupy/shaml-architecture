@@ -30,3 +30,13 @@ This will install shaml, compass and haml-edge on your computer.
 Alternatively you can get the bare application without any fancy generation framework. Download the latest VS2008 solution from [http://github.com/sztupy/shaml/downloads github]
 
 Don't forget that if you don't have compass installed, then the stylesheet generation build process will always fail. Remove the command "compass --update" from the post build process if you don't use it.
+
+= Compiling =
+
+== Windows ==
+
+Open the solution, and press build.
+
+== Mono ==
+
+Use gmcs to compile all .cs files in the App directory to an assembly. Add all files from the libraries directory as reference, and include a copy of System.Web.Mobile and System.Web.Mvc too.
