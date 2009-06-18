@@ -4,10 +4,10 @@
 
 == Bugs only on mono ==
 
- * Html.AntiforgeryToken helper does not work under mono
+ * Html.!AntiforgeryToken helper does not work under mono
  * OpenID Relying party might be still unstable
  * NHaml might be still unstable
 
-== ToDo ==
+== !ToDo ==
 
- * The MembershipAdministration controller uses GET commands to update the Memberships. It needs urgent refactoring.
+ * The !MembershipAdministration controller uses GET commands to update the Memberships. It needs urgent refactoring.
