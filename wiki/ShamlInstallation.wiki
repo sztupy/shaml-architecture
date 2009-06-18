@@ -41,9 +41,9 @@ Open the solution, and press build.
 
 Add System.Web.Mvc.dll and System.Web.Mobile.dll to the libraries directory, and remove NHibernate.Linq.dll from that. Next run
 {{{
-gmcs -recurse:App/*.cs `ls ../libraries/*.dll | sed "s/../-r:../"` -r:System.Web.Routing -r:System.Web -t:library -out:bin/WebBase.dll
+gmcs -recurse:*.cs `ls ../libraries/*.dll | sed "s/../-r:../"` -r:System.Web.Routing -r:System.Web -t:library -out:bin/WebBase.dll
 }}}
-from the main Web directory. Then copy all files from the libraries dir to the bin dir, and you're ready
+from the main Web directory. Then copy all files from the libraries dir to the bin dir, and you're ready. (of course replace bin/WebBase.dll with the name of your project)
 
 = Running =
 
