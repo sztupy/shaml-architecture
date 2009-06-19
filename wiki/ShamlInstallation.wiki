@@ -39,7 +39,13 @@ Open the solution, and press build.
 
 == Mono ==
 
-Add System.Web.Mvc.dll and System.Web.Mobile.dll (not included) to the libraries directory, and remove NHibernate.Linq.dll (included but does not work) from that. Next run
+Run
+{{{
+shaml compile
+}}}
+in the solution directory to compile both the application and the tests.
+
+If you don't user ruby then run
 {{{
 gmcs -recurse:*.cs `ls ../libraries/*.dll | sed "s/../-r:../"` -r:System.Web.Routing -r:System.Web -t:library -out:bin/WebBase.dll
 }}}
@@ -53,7 +59,12 @@ Press run in Visual Studio
 
 == Mono ==
 
-add the dll's of the libraries directory to MONO_PATH. then run xsp2. Or simply:
+Run 
+{{{
+shaml server
+}}}
+in the solution directory or run
 {{{
 MONO_PATH="/path/to/app/bin" xsp2 --port 8080
 }}}
+in the web application project directory
