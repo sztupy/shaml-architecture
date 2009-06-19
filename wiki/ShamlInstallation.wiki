@@ -4,7 +4,6 @@
 
 Things you will need:
  * mono 2.4 or .NET 3.5
-
 For the generator and compass frameworks:
  * ruby 1.8 or 1.9
  * rubygems
