@@ -5,8 +5,6 @@
 == Bugs only on mono ==
 
  * Html.!AntiforgeryToken helper does not work under mono
- * OpenID Relying party might be still unstable
- * NHaml might be still unstable
 
 == !ToDo ==
 
