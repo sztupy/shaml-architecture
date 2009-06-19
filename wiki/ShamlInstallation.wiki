@@ -1,10 +1,12 @@
-#summary How to install s#aml-architecture
+#summary How to download install s#aml-architecture
 
 = Introduction =
 
 Things you will need:
  * mono 2.4 or .NET 3.5
- * ruby 1.8.x (might work with 1.9.1)
+
+For the generator and compass frameworks:
+ * ruby 1.8 or 1.9
  * rubygems
 
 = Installation =
