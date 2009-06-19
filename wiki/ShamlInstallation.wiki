@@ -44,7 +44,7 @@ Run
 {{{
 shaml compile
 }}}
-in the solution directory to compile both the application and the tests.
+in the solution directory to compile both the application and the tests. Run `compass --update` too, if you want to update your stylesheets.
 
 If you don't user ruby then run
 {{{
