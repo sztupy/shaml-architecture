@@ -1,13 +1,15 @@
 #summary How to create a S#aml-architecture application
 
-= Introduction =
+= Create application =
+
+== With the generator app ==
 
 To create a shaml application use the shaml command line utility to generate an application:
 {{{
 shaml generate app NewApp
 }}}
 
-this will create a !NewApp directory with the complete s#aml-architecture stack. Open the solution in VS.NET2008, compile, deploy on your mono box and you're ready to go.
+this will create a !NewApp directory with the complete s#aml-architecture stack. Change the database connection strings in NHibernate.config and Web.config and you're ready.
 
 The shaml command can also create REST-styled resources. Run the following inside your solution directory:
 {{{
@@ -16,6 +18,46 @@ shaml generate resource resname name:string;date:DateTime
 
 This will create a new model called Resname, with two properties. It will also create a scaffold view, unit tests, and a controller to handle editing the resource.
 
-Apart from the installation, s#aml-architecture uses the same things as s#arp-architecture, Fluent NHibernate, dotNetOpenAuth and of course ASP.NET MVC, so check their documentations too for more.
+Apart from the installation, s#aml-architecture uses the same things as s#arp-architecture, Fluent NHibernate, dotNetOpenAuth and of course ASP.NET MVC, so check their documentations for more information. You can also read about the [GootToKnow differences] between S#arp-architecture and Shaml.
 
-Check TreeListing and GoodToKnow pages for more information about the structure of the generated application
+== Without the generator application ==
+
+Alternatively you can download the bare solution file from [http://github.com/sztupy/shaml/downloads github]. Extract the zip file, and you're ready. You won't have neither the CRUD generator nor the Compass framework without ruby though.
+
+= Compiling =
+
+== Windows ==
+
+Open the solution, and press build.
+
+== Mono ==
+
+Run
+{{{
+shaml compile
+}}}
+in the solution directory to compile both the application and the tests.
+
+If you don't use ruby then run
+{{{
+gmcs -recurse:*.cs `ls ../libraries/*.dll | sed "s/../-r:../"` -r:System.Web.Routing -r:System.Web -t:library -out:bin/WebBase.dll
+}}}
+from the main Web directory. Then copy all files from the libraries dir to the bin dir, and you're ready. (of course replace bin/WebBase.dll with the name of your project)
+
+= Running =
+
+== Windows ==
+
+Press run in Visual Studio
+
+== Mono ==
+
+Run 
+{{{
+shaml server
+}}}
+in the solution directory or run
+{{{
+MONO_PATH="/path/to/app/bin" xsp2 --port 8080
+}}}
+in the web application project directory
