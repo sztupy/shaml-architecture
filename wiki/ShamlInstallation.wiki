@@ -4,11 +4,13 @@
 
 Things you will need:
  * mono 2.4 or .NET 3.5
-For the generator and compass frameworks:
+For the CRUD generator and compass frameworks:
  * ruby 1.8 or 1.9
  * rubygems
 
 = Installation =
+
+== Install with the CRUD and Application generator ==
 
 To install shaml you will need to use githubs gem server, as shaml is distributed there.
 
@@ -26,7 +28,7 @@ gem install sztupy-shaml
 
 This will install shaml, compass and haml-edge on your computer.
 
-= Install without ruby =
+== Install without ruby ==
 
 Alternatively you can get the bare application without any fancy generation framework. Download the latest VS2008 solution from [http://github.com/sztupy/shaml/downloads github]
 
@@ -44,9 +46,9 @@ Run
 {{{
 shaml compile
 }}}
-in the solution directory to compile both the application and the tests. Run `compass --update` from the web project directory too, if you want to update your stylesheets.
+in the solution directory to compile both the application and the tests.
 
-If you don't user ruby then run
+If you don't use ruby then run
 {{{
 gmcs -recurse:*.cs `ls ../libraries/*.dll | sed "s/../-r:../"` -r:System.Web.Routing -r:System.Web -t:library -out:bin/WebBase.dll
 }}}
