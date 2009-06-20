@@ -5,6 +5,8 @@
 == Bugs only on mono ==
 
  * Html.!AntiforgeryToken helper does not work under mono
+ * Lazy loading in NHibernate doesn't work under mono. By default it is therefore disabled.
+ * Under mono the return_to parameter while initiating an OpenID reuest will incorrectly contain "UrlRouting.axd" too. You have to explicitly add the return_to parameter when constructing the request with !OpenIdRelyingParty.!CreateRequest
 
 == !ToDo ==
 
