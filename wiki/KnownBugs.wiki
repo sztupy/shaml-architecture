@@ -9,3 +9,4 @@
 == !ToDo ==
 
  * The !MembershipAdministration controller uses GET commands to update the Memberships. It needs urgent refactoring.
+ * Add support for alternative databases like SQLite
