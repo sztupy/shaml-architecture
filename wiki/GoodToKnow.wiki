@@ -6,6 +6,7 @@ The project is based on a pre-RTM revision of s#arp-architecture, with the follo
 
  * The support library's names are Shaml, instead of !SharpArch
  * The structure of both the support library and the default web application solution is [TreeListing simplified] to ease compiling under mono (one assembly per application)
+ * Shaml uses NHibernate 2.0.1GA because the 2.1.0beta had some problems running under mono with Flulent NHibernate.
  * Shaml doesn't depend on Castle.Windsor and Microsoft.!ServiceLocator because they don't work under mono.
   * The controllers still support DI, but this is only used when testing
   * Because !ServerLocator is not included the base frameworks used are hard-coded (NHibernate and NUnit)
