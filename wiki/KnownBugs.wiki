@@ -1,7 +1,5 @@
 #summary Known bugs and limitations
 
-== All bugs ==
-
 == Bugs only on mono ==
 
  * Html.!AntiforgeryToken helper does not work under mono
