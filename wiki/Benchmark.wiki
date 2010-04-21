@@ -1,0 +1,13 @@
+#summary Benchmark
+
+A similar blog which was showed at the [http://shaml.sztupy.hu/tutorial-start.html tutorial] was created in rails, merb and S#aml. The benchmark used was {{{ab}}} with the following parameters:
+
+{{{
+ab -c 20 -n 2000 website
+}}}
+
+The mean requests per second results were the following (best results from three runs):
+ * rails using mod_rails: 7.86
+ * merb  using mod_rack: 9.75
+ * shaml using xsp2: 19.51
+ * shaml using mod_mono: 20.32
