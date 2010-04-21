@@ -1,5 +1,7 @@
 #summary How to create a S#aml Architecture application
 
+The complete list of shaml commands can be found at the [http://shaml.sztupy.hu/api/index.html API documentation page]
+
 = Create application =
 
 == With the generator app ==
