@@ -15,6 +15,7 @@ The project's 0.5.0 GA version is based on S#arp Architecture 1.5 beta 1
   * Uses a modified Membership provider to support multiple OpenID's per one identity
  * NHaml is the default view engine
   * The default view engine is still supported
+ * Removed Microsoft.Web.Mvc because of licencing restrictions
  * Uses the [http://compass-style.org Compass] stylesheet framework to build css stylesheets
  * Uses a ruby based tool to create the CRUD scaffolds instead of !T4Toolkit
  * Alternative directory structure
