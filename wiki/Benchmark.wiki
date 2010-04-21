@@ -1,5 +1,7 @@
 #summary Benchmark
 
+Don't take these results too seriously, because they were not run in a controlled environment.
+
 A similar blog which was showed at the [http://shaml.sztupy.hu/tutorial-start.html tutorial] was created in rails, merb and S#aml. The benchmark used was {{{ab}}} with the following parameters:
 
 {{{
