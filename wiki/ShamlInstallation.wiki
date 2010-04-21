@@ -1,5 +1,7 @@
 #summary How to download install S#aml Architecture
 
+A more verbose installation tutorial can be found [http://shaml.sztupy.hu/tutorial-start.html here]
+
 = Introduction =
 
 Things you will need:
