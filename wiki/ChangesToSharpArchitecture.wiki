@@ -7,6 +7,7 @@ The project's 0.5.0 GA version is based on S#arp Architecture 1.5 beta 1
  * The support library's names are Shaml, instead of !SharpArch
  * Shaml uses !LinFu.IoC instead of Castle.Windsor because the latter had issues working on mono. Although !LinFu has fever features it is lightweight and works well with Shaml
  * Shaml uses an integrated NHibernate based Membership/Role/Session/Profile Provider, that resides in Shaml.Membership
+ * Shaml is more coupled with NHibernate and the NUnit testing framework (this might sound a bad design choice but it makes testing for mono compatiblity much easier)
  * Shaml has an extended IRepository`<T>` class to allow easy pagination, and searching
  * Shaml has client side validation support for NHibernate Validator
  * Built-in optionated OpenID support
