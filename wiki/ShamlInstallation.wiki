@@ -1,32 +1,28 @@
-#summary How to download install s#aml-architecture
+#summary How to download install S#aml Architecture
 
 = Introduction =
 
 Things you will need:
- * mono 2.4 or .NET 3.5
+ * mono 2.4.4, mono 2.6.3+ or .NET 3.5
 For the CRUD generator and compass frameworks:
- * ruby 1.8 or 1.9
+ * ruby 1.8.6 or mono 1.8.7 (mono 1.9.x should work too)
  * rubygems
 
 = Installation =
 
 == Install with the CRUD and Application generator ==
 
-To install shaml you will need to use githubs gem server, as shaml is distributed there.
-
 Linux:
 {{{
-sudo gem sources -a http://gems.github.com
-sudo gem install sztupy-shaml
+sudo gem install shaml
 }}}
 
 Windows:
 {{{
-gem sources -a http://gems.github.com
-gem install sztupy-shaml
+gem install shaml
 }}}
 
-This will install shaml, compass and haml-edge on your computer.
+This will install shaml, compass and haml on your computer.
 
 == Install without ruby ==
 
