@@ -1,0 +1,7 @@
+#summary How to compile S#aml Architecture
+
+In order to compile S#aml Architecture you need the same requirements as for S#aml Architecture itself.
+
+First compile the `Shaml` base libraries. Use Visual Studio to compile the solution, or run `msbuild`, or `xbuild` on mono. The compiled files will get into `WebBase/libraries`
+
+Next run `build_gem.rb`. This will create the base library from the files present in the `WebBase` directories, and copy the resource generation sample files (files containing the word `WebSample`), into the `template` directory. After this, it will create the gem, that can be installed on the computer.
