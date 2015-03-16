@@ -1,0 +1,31 @@
+A more verbose installation tutorial can be found [here](http://shaml.sztupy.hu/tutorial-start.html)
+
+# Introduction #
+
+Things you will need:
+  * mono 2.4.4, mono 2.6.3+ or .NET 3.5
+For the CRUD generator and compass frameworks:
+  * ruby 1.8.6 or mono 1.8.7 (mono 1.9.x should work too)
+  * rubygems
+
+# Installation #
+
+## Install with the CRUD and Application generator ##
+
+Linux:
+```
+sudo gem install shaml
+```
+
+Windows:
+```
+gem install shaml
+```
+
+This will install shaml, compass and haml on your computer.
+
+## Install without ruby ##
+
+Alternatively you can get the bare application without any fancy generation framework. Download the latest VS2008 solution from [github](http://github.com/sztupy/shaml/downloads)
+
+Don't forget that if you don't have compass installed, then the stylesheet generation build process will always fail. Remove the command "compass --update" from the post build process if you don't use it.

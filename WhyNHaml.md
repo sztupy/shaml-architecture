@@ -1,0 +1,5 @@
+Mainly because S#aml = Sharp + Haml
+
+S#aml Architecture's main design point is to make it easily maintainable even in situations where you can only access the code through an SSH console. Both haml and sass makes editing and modifying the views and stylesheets easier in these circumstances. There is also an [Intellisense plugin](http://github.com/sztupy/nhamlsense/downloads) with full C# Intellisense support for Visual Studio 2008 available if you intend on using it with Visual Studio.
+
+S#aml Architecture however doesn't bind your hands. The generator script, shaml, can generate aspx based views too, and spark support is coming soon too.

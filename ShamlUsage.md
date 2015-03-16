@@ -1,0 +1,66 @@
+The complete list of shaml commands can be found at the [API documentation page](http://shaml.sztupy.hu/api/index.html)
+
+# Create application #
+
+## With the generator app ##
+
+To create a shaml application use the shaml command line utility to generate an application:
+```
+shaml generate app NewApp
+```
+
+this will create a NewApp directory with the complete S#aml Architecture stack.
+
+The shaml command can also create REST-styled resources. Run the following inside your solution directory:
+```
+shaml generate resource resname "name:string;date:DateTime"
+```
+
+This will create a new model called Resname, with two properties. It will also create a scaffold view, unit tests, and a controller to handle editing the resource.
+
+Apart from the installation, S#aml Architecture uses the same things as S#arp Architecture, Fluent NHibernate, DotNetOpenAuth and of course ASP.NET MVC 2, so check their documentations for more information. You can also read about the [differences](GoodToKnow.md) between S#arp Architecture and Shaml.
+
+## Without the generator application ##
+
+Alternatively you can download the bare solution file from [github](http://github.com/sztupy/shaml/downloads). Extract the zip file, and you're ready. You won't have neither the CRUD generator nor the Compass framework without ruby though.
+
+# Compiling #
+
+## Windows ##
+
+Open the solution, and press build.
+
+## Mono ##
+
+Run
+```
+shaml compile
+```
+in the solution directory to compile both the application and the tests.
+
+If you don't use ruby then run
+```
+xbuild ProjetName.sln
+```
+from the main Web directory.
+
+# Running #
+
+## Windows ##
+
+Press run in Visual Studio
+
+## Mono ##
+
+Run
+```
+shaml server
+```
+
+in the solution directory or run
+
+```
+MONO_PATH="/path/to/app/bin" xsp2 --port 8080
+```
+
+in the web application project directory

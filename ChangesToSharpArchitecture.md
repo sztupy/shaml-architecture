@@ -1,0 +1,19 @@
+# Changes from S#arp Architecture #
+
+The project's 0.5.0 GA version is based on S#arp Architecture 1.5 beta 1
+
+  * The support library's names are Shaml, instead of SharpArch
+  * Shaml uses LinFu.IoC instead of Castle.Windsor because the latter had issues working on mono. Although LinFu has fever features it is lightweight and works well with Shaml
+  * Shaml uses an integrated NHibernate based Membership/Role/Session/Profile Provider, that resides in Shaml.Membership
+  * Shaml is more coupled with NHibernate and the NUnit testing framework (this might sound a bad design choice but it makes testing for mono compatiblity much easier)
+  * Shaml has an extended IRepository`<T>` class to allow easy pagination, and searching
+  * Shaml has client side validation support for NHibernate Validator
+  * Built-in optionated OpenID support
+    * Uses DotNetOpenAuth
+    * Uses a modified Membership provider to support multiple OpenID's per one identity
+  * NHaml is the default view engine
+    * The default view engine is still supported
+  * Removed Microsoft.Web.Mvc because of licencing restrictions
+  * Uses the [Compass](http://compass-style.org) stylesheet framework to build css stylesheets
+  * Uses a ruby based tool to create the CRUD scaffolds instead of T4Toolkit
+  * Alternative directory structure
